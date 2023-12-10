@@ -24,7 +24,7 @@
 <br>앱 초기화면
 
 <br>
-![appp](https://github.com/ahastuart/Wine_cellar/assets/117140125/64158b0a-da7e-419b-8942-09bd1277d85c)
+![appp](https://github.com/ahastuart/Wine_cellar/assets/117140125/cc1f4c6a-6898-421f-9732-6cbc332a6934)
 <br> 앱 목록조회 (사물: MyMy)
 <br>
 ![apppp](https://github.com/ahastuart/Wine_cellar/assets/117140125/662a3de2-d306-4bd3-91f3-86dd50a9f38a)
