@@ -214,7 +214,7 @@ class Thing {
 ## 7-1. 디바이스 목록 조회
 - Lambda Name: ListingWineLambda  <br>
 - version: java 11  <br>
-
+-----
 App.java Code
 ```
 package helloworld;
@@ -288,7 +288,7 @@ public class App implements RequestHandler<Object, String> {
 ## 7-2. 디바이스 상태 조회
 - Lambda Name: GetWineLambda  <br>
 - version: java 11  <br>
-
+-----
 App.java Code
 ```
 package helloworld;
@@ -323,7 +323,6 @@ class Event {
     public String device;
 }
 ```
------
 -json 예시 <br>
 ```
 {
@@ -347,7 +346,7 @@ class Event {
 ## 7-3. 디바이스 상태 변경
 - Lambda Name: UpdateWineLambda  <br>
 - version: java 11  <br>
-
+-----
 App.java Code
 ```
 package helloworld;
@@ -419,7 +418,6 @@ class Tag {
 }
 
 ```
------
 -json 예시 <br>
 ```
 {
@@ -483,7 +481,7 @@ class Tag {
      }
  }
 ```
-4. /{devices} PUT 메서드 선택 - 통합 요청 - 템플릿 생성 - 콘텐츠 유형: application/json - 템플릿 생성에서 UpdateWineInput 선 - 템플릿 본문에 다음과 같이 입력 후 생성  <br>
+4. /{devices} PUT 메서드 선택 - 통합 요청 - 템플릿 생성 - 콘텐츠 유형: application/json - 템플릿 생성에서 UpdateWineInput 선택택 - 템플릿 본문에 다음과 같이 입력 후 생성  <br>
 ```
  #set($inputRoot = $input.path('$'))
  {
@@ -507,7 +505,7 @@ class Tag {
 ## 7-4. 디바이스 로그 조회
 - Lambda Name: LogWineLambda  <br>
 - version: java 11  <br>
-
+-----
 App.java Code
 ```
 package helloworld;
@@ -602,7 +600,6 @@ class Event {
 }
 
 ```
------
 -json 예시 <br>
 ```
 { "device": "MyMy", "from":"2019-12-01 14:28:10", "to": "2023-12-09 22:13:58"}
