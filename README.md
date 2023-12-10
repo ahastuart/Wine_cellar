@@ -22,6 +22,7 @@
 - ArduinoECCX08
 - ArduinoMqttClient
 - Arduino Cloud Provider Examples
+- DHT sensor library
 
 
 
