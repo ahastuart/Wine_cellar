@@ -1,7 +1,7 @@
 # Iot_Cloud_Platform Final Project
 
 
-# 스마트 와인 냉장고 매니저 (Wine_cellar)
+# 스마트 와인 냉장고 매니저 (Wine_cellar) 🍷
 본 프로젝트는 와인 애호가들을 위한 편리한 와인 저장 및 재고 관리 솔루션을 제공하면서, 사용자가 냉장고의 상태를 실시간으로 모니터링하고 와인의 보관 온도를 최적화하여 와인의 맛과 향을 최대화하려는 목적이 있다.
 ### 1. 온습도 센서를 활용한 와인 상태 모니터링
 와인 냉장고는 3층으로 이루어져 있고, 각 층 마다 온습도 센서가 부착이 되어 있어 와인 보관 상태를 앱으로 모니터링 할 수 있다.
@@ -14,11 +14,11 @@
 
 
 # 1. 라이브러리 설치
-WiFiNINA (or WiFi101 for the MKR1000)
-ArduinoBearSSL
-ArduinoECCX08
-ArduinoMqttClient
-Arduino Cloud Provider Examples
+- WiFiNINA (or WiFi101 for the MKR1000)
+- ArduinoBearSSL
+- ArduinoECCX08
+- ArduinoMqttClient
+- Arduino Cloud Provider Examples
 
 
 
