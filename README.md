@@ -3,7 +3,7 @@
 
 # 스마트 와인 냉장고 매니저 (Wine_cellar) 🍷
 -----
-###### 본 프로젝트는 <span style="color:red">와인 애호가</span>들을 위한 편리한 <span style="color:red">와인 저장 및 재고 관리</span> 솔루션을 제공하면서, 사용자가 냉장고의 상태를 실시간으로 모니터링하고 <span style="color:red">와인의 보관 온도를 최적화</span>하여 와인의 맛과 향을 최대화하려는 목적이 있다.
+###### 본 프로젝트는 와인 애호가들을 위한 편리한 와인 저장 및 재고 관리 솔루션을 제공하면서, 사용자가 냉장고의 상태를 실시간으로 모니터링하고 와인의 보관 온도를 최적화하여 와인의 맛과 향을 최대화하려는 목적이 있다.
 -----
 
 
@@ -169,13 +169,49 @@ class Thing {
     }
 }
 ```
+-json 예시 <br>
+```
+{
+  "previous": {
+    "state": {
+      "reported": {
+        "temperature": "2",
+        "humidity": "3",
+        "temperature3": "3",
+        "humidity3": "8",
+        "inventory" : "1",
+        "inventory3" : "1",
+        "LED": "OFF",
+        "LED3": "ON"
+      }
+    }
+  },
+  "current": {
+    "state": {
+      "reported": {
+        "temperature": "9",
+        "humidity": "48",
+        "temperature3": "26",
+        "humidity3": "74",
+        "inventory" : "0",
+        "inventory3" : "0",
+        "LED": "OFF",
+        "LED3": "OFF"
+      }
+    }
+  },
+  "timestamp": 1575178117,
+  "device":"MyMy"
+}
+```
+-----
 4. 람다함수 *(LoggingWineLambda)* 함수 생성 후, 배포 -> AmazonDynamoDBFullAccess 정책 권한 추가  <br>
 5. AWS IoT Core에서 메시지 라우팅 - 규칙 - 규칙생성 - SQL문 입력 - lambda함수 *(LoggingWineLambda)* 선택 후 생성
    SELECT * FROM '$aws/things/MyMy/shadow/update/accepted'  <br>
 
 
 # 7. API Gateway를 통한 REST API 구축하기
-## 1. 디바이스 목록 조회
+## 7-1. 디바이스 목록 조회
 - Lambda Name: ListingWineLambda  <br>
 - version: java 11  <br>
 
@@ -240,6 +276,7 @@ public class App implements RequestHandler<Object, String> {
 
 }
 ```
+-----
 1. Lambda 함수 생성 후, AWSIoTFullAccess 권한 추가 -> 테스트  <br>
 2. API Gateway에서 API 생성 - REST API 생성 - API 이름 *(wine-api)* - API 생성  <br>
 3. 리소스 아래에 /를 선택 -> 리소스 생성 -> 리소스 이름 *(devices)*  <br>
@@ -248,7 +285,7 @@ public class App implements RequestHandler<Object, String> {
 6. API 배포 - 새 스테이지 - prod - 배포  <br>
 
 
-## 2. 디바이스 상태 조회
+## 7-2. 디바이스 상태 조회
 - Lambda Name: GetWineLambda  <br>
 - version: java 11  <br>
 
@@ -286,6 +323,14 @@ class Event {
     public String device;
 }
 ```
+-----
+-json 예시 <br>
+```
+{
+  "device" : "MyMy"
+}
+```
+-----
 1. Lambda 함수 생성 후, AWSIoTFullAccess 권한 추가 -> 테스트  <br>
 2. API Gateway에서 이전에 생성한 wine-api를 선택 -> /devices 선택 -> 리소스 생성 -> 리소스 이름 : *{devices}*  <br>
 3. 메서드 섹션 - 메소드 생성 - Get - 통합유형에서 Lambda함수(GetWineLambda) 선택 - Lambda 프록시 통합은 선택안된 상태 유지 - 메서드 생성 후 테스트  <br>
@@ -299,7 +344,7 @@ class Event {
 7. API 배포 - 새 스테이지 - prod - 배포  <br>
 
 
-## 3. 디바이스 상태 변경
+## 7-3. 디바이스 상태 변경
 - Lambda Name: UpdateWineLambda  <br>
 - version: java 11  <br>
 
@@ -374,6 +419,48 @@ class Tag {
 }
 
 ```
+-----
+-json 예시 <br>
+```
+{
+  "device": "MyMy",
+  "tags" : [
+    {
+      "tagName": "temperature",
+      "tagValue": "10"
+    },
+    {
+      "tagName": "humidity",
+      "tagValue": "33"
+    },
+    {
+      "tagName": "temperature3",
+      "tagValue": "25"
+    },
+    {
+      "tagName": "humidity3",
+      "tagValue": "72"
+    },
+    {
+      "tagName": "inventory",
+      "tagValue": "100"
+    },
+    {
+      "tagName": "inventory3",
+      "tagValue": "0"
+    },
+    {
+      "tagName": "LED",
+      "tagValue": "OFF"
+    },
+    {
+      "tagName": "LED3",
+      "tagValue": "OFF"
+    }
+  ]
+}
+```
+-----
 1. Lambda 함수 생성 후, AWSIoTFullAccess 권한 추가 -> 테스트  <br>
 2. API Gateway에서 이전에 생성한 wine-api를 선택 -> /{device} 선택  메서드 섹션 - 메소드 생성 - PUT - 통합유형에서 Lambda함수(GetWineLambda) 선택- 메서드 생성  <br>
 3. 모델 - 모델 생성 - 모델 이름: UpdateWineInput - 콘텐츠 유형: application/json - 스키마 정의
@@ -417,7 +504,7 @@ class Tag {
 7. API 배포 - 새 스테이지 - prod - 배포  <br>
 
 
-## 4. 디바이스 로그 조회
+## 7-4. 디바이스 로그 조회
 - Lambda Name: LogWineLambda  <br>
 - version: java 11  <br>
 
@@ -515,6 +602,12 @@ class Event {
 }
 
 ```
+-----
+-json 예시 <br>
+```
+{ "device": "MyMy", "from":"2019-12-01 14:28:10", "to": "2023-12-09 22:13:58"}
+```
+-----
 1. Lambda 함수 생성 후, AmazonDynamoDBFullAccess 권한 추가 -> 테스트  <br>
 2. API Gateway에서 이전에 생성한 wine-api를 선택 -> /{device} 선택 - 리소스 생성 - 리소스 이름: log
 3. 메서드 섹션 - 메소드 생성 - 메서드 유형: Get - 통합 유형에서 Lambda함수 *(LogWineLambda)* 선택
