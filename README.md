@@ -61,7 +61,7 @@ IntelliJ IDEA에서 프로젝트 생성 ( 프로젝트 이름: *LoggingWineLambd
 build.gradle 파일에서 의존성 추가 후, 변경사항 반영
 src/main/java/helloworld/App.java 파일
 
-'''
+```
 package helloworld;
 
 import java.text.SimpleDateFormat;
@@ -168,7 +168,7 @@ class Thing {
         }
     }
 }
-'''
+```
 
 
 
