@@ -20,7 +20,7 @@
 
 
 # 실행 결과 및 설명
-![app](https://github.com/ahastuart/Wine_cellar/assets/117140125/64158b0a-da7e-419b-8942-09bd1277d85c)
+![app](https://github.com/ahastuart/Wine_cellar/assets/117140125/b9d059b3-a346-4465-80d1-ebaea40c69ae)
 <br>앱 초기화면
 
 <br>
