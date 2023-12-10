@@ -60,8 +60,8 @@ DynamoDB에서 테이블 - 테이블 생성 - 테이블 이름 *(WineTable)* - �
 IntelliJ IDEA에서 프로젝트 생성 ( 프로젝트 이름: *LoggingWineLambda* / Runtime: *java11* / SDK: *11버전* ) <br>
 build.gradle 파일에서 의존성 추가 후, 변경사항 반영
 src/main/java/helloworld/App.java 파일
-'''
 
+'''
 package helloworld;
 
 import java.text.SimpleDateFormat;
