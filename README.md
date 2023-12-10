@@ -16,7 +16,7 @@
 ### 4. 앱 알림 서비스
 온습도의 이상 및 재고 부족 시, 경고 메시지 알림 서비스
 
-
+<img width="1404" alt="구조도" src="https://github.com/ahastuart/Wine_cellar/assets/117140125/f0d691cb-4dd0-4182-90a2-716d09e0bbef">
 
 # 1. 라이브러리 설치
 - WiFiNINA (or WiFi101 for the MKR1000)
