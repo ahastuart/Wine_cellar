@@ -20,7 +20,7 @@
 
 
 # 실행 결과 및 설명
-![app](https://github.com/ahastuart/Wine_cellar/assets/117140125/b9d059b3-a346-4465-80d1-ebaea40c69ae)
+![app](https://github.com/ahastuart/Wine_cellar/assets/117140125/b9d059b3-a346-4465-80d1-ebaea40c69ae){: width="60%" height="60%"}
 <br>앱 초기화면
 
 ![appp](https://github.com/ahastuart/Wine_cellar/assets/117140125/cc1f4c6a-6898-421f-9732-6cbc332a6934)
@@ -34,7 +34,7 @@
 <br> 앱 상태변경 (냉각팬 상태가 ON으로 바뀜)
 <br>
 ![appee](https://github.com/ahastuart/Wine_cellar/assets/117140125/7edc49d5-af4d-49fd-bcb3-975799e4dd16)
-앱 로그조회
+<br> 앱 로그조회
 
 
 # 1. 라이브러리 설치
