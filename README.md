@@ -29,7 +29,7 @@
 <br> 앱 목록조회 (사물: MyMy)
 
 <br>
-<img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/cc1f4c6a-6898-421f-9732-6cbc332a6934" width="30%" height="30%"/>
+<img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/3af1d2cf-e3d7-4b8f-b858-25fe04a358ff" width="30%" height="30%"/>
 <br> 앱 상태조회 (1,3층의 온습도 + 재고 / 냉각팬과 히터의 상태)
 
 <br>
