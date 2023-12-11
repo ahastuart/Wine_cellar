@@ -1,6 +1,5 @@
 # Iot_Cloud_Platform Final Project
 
-으악
 
 
 # 스마트 와인 냉장고 매니저 (Wine_cellar) 🍷
