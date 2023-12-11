@@ -21,20 +21,21 @@
 
 # 실행 결과 및 설명
 
-<img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/b9d059b3-a346-4465-80d1-ebaea40c69ae" width="60%" height="60%"/>
+<img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/b9d059b3-a346-4465-80d1-ebaea40c69ae" width="30%" height="30%"/>
 <br>앱 초기화면
 
+<img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/cc1f4c6a-6898-421f-9732-6cbc332a6934" width="30%" height="30%"/>
 ![appp](https://github.com/ahastuart/Wine_cellar/assets/117140125/cc1f4c6a-6898-421f-9732-6cbc332a6934)
 <br> 앱 목록조회 (사물: MyMy)
 
-![apppp](https://github.com/ahastuart/Wine_cellar/assets/117140125/662a3de2-d306-4bd3-91f3-86dd50a9f38a)
+<img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/cc1f4c6a-6898-421f-9732-6cbc332a6934" width="30%" height="30%"/>
 <br> 앱 상태조회 (1,3층의 온습도 + 재고 / 냉각팬과 히터의 상태)
 
-![appe](https://github.com/ahastuart/Wine_cellar/assets/117140125/f7021b36-fc42-49f0-9578-ac79a03db20e)
+<img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/f7021b36-fc42-49f0-9578-ac79a03db20e" width="30%" height="30%"/>
 
 <br> 앱 상태변경 (냉각팬 상태가 ON으로 바뀜)
-<br>
-![appee](https://github.com/ahastuart/Wine_cellar/assets/117140125/7edc49d5-af4d-49fd-bcb3-975799e4dd16)
+
+<img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/7edc49d5-af4d-49fd-bcb3-975799e4dd16" width="30%" height="30%"/>
 <br> 앱 로그조회
 
 
