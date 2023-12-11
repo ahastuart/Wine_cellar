@@ -24,6 +24,7 @@
 <img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/b9d059b3-a346-4465-80d1-ebaea40c69ae" width="30%" height="30%"/>
 <br>앱 초기화면
 
+<br>
 <img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/cc1f4c6a-6898-421f-9732-6cbc332a6934" width="30%" height="30%"/>
 <br> 앱 목록조회 (사물: MyMy)
 
