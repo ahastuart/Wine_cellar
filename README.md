@@ -40,6 +40,9 @@
 <img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/7edc49d5-af4d-49fd-bcb3-975799e4dd16" width="30%" height="30%"/>
 <br> 앱 로그조회
 
+<br>
+
+
 
 # 1. 라이브러리 설치
 - WiFiNINA (or WiFi101 for the MKR1000)
