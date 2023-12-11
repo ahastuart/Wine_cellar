@@ -41,6 +41,8 @@
 <br> 앱 로그조회
 
 <br>
+<img src="https://github.com/ahastuart/Wine_cellar/assets/117140125/5f4e9f2f-e108-4105-ac77-136682220d55" width="30%" height="30%"/>
+<br> 앱 알림 서비스 (온습도 이상 및 재고 부족 시, 경고 메시지 울림)
 
 
 
